@@ -2,10 +2,10 @@
 <html>
 <head>
 <script>
-function add() {
+function submit() {
     if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        if (localStorage.task) {
+            localStorage.task = Number(localStorage.clickcount)+1;
         } else {
             localStorage.clickcount = 1;
         }
@@ -17,12 +17,6 @@ function add() {
 </script>
 </head>
 <body>
-
-  <form id="task" action="form_action.asp">
-//form
- <input type="text" name="lname"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
-</form>
 
 <script>
 function myFunction() {
