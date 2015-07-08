@@ -31,9 +31,9 @@ $(document).ready(function() {
 
     function todoChecked(el) {
         if ($(el).is(":checked") === true) {
-            $(el).addClass(".checked");
+            $(el).parent().addClass("checked");
         } else {
-            $(el).removeClass(".checked");
+            $(el).parent().removeClass("checked");
         }
     }
 
