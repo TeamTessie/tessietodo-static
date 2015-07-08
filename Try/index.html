@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
     <head>
@@ -12,19 +14,24 @@
     <body>
       <div id="logo-container"><a href="Header.png"><img src="Header.png" alt="" /></a></div>
 
-
+      <div align="center" style="border:1px dashed #e3ceee border-radius 20px 60px">
         <form id="task-form" method="post">
-            <label for="todo-name">Insert Task:</label>
+            <label for="todo-name"> <h1>Insert Task:</h1> </label>
             <input type="text" name="todo-name" id="todo-name" />
             <br>
-            <a href="#" onclick="addTodo()">Add</a>
-            <a href="#" onclick="clearCheckedTodos()">Clear</a>
+            <a href="#" onclick="addTodo()"><h3>Add</h3></a>
+            <a href="#" onclick="clearCheckedTodos()"><h3>Clear</h3></a>
         </form>
 
-        <ul id="tasks" style="list-style-type:none">
+        <span>
+          <h2>
+          <ul id="tasks" style="list-style-type:none">
 
         </ul>
+      </h2>
+    </div>
 
     </body>
-  </center>
+</center>
+
 </html>
